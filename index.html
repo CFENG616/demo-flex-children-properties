@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items: Order and Sizing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <p>WEBD1003</p>
+        <h1>Flex Items: Order, Grow, Shrink, Basis</h1>
+    </header>
+
+    <main>
+        <!-- Step 1: A plain flex container. Items are only as wide as their content. -->
+        <section>
+            <h2>1. A Simple Flex Container</h2>
+            <div class="container">
+                <p class="item a">A</p>
+                <p class="item b">Bananas are rich in potassium</p>
+                <p class="item c">Cantaloupe</p>
+            </div>
+        </section>
+
+        <!-- Step 2: order -->
+        <section>
+            <h2>2. order</h2>
+            <div class="container order-demo">
+                <p class="item a">A</p>
+                <p class="item b">Bananas are rich in potassium</p>
+                <p class="item c">Cantaloupe</p>
+            </div>
+        </section>
+
+        <!-- Step 3: flex-grow -->
+        <section>
+            <h2>3. flex-grow</h2>
+            <div class="container grow-demo">
+                <p class="item a">A</p>
+                <p class="item b">Bananas are rich in potassium</p>
+                <p class="item c">Cantaloupe</p>
+            </div>
+        </section>
+
+        <!-- Step 4: flex-shrink -->
+        <section>
+            <h2>4. flex-shrink</h2>
+            <div class="container shrink-demo">
+                <p class="item a">A</p>
+                <p class="item b">Bananas are rich in potassium</p>
+                <p class="item c">Cantaloupe</p>
+            </div>
+        </section>
+
+        <!-- Step 5: flex-basis -->
+        <section>
+            <h2>5. flex-basis</h2>
+            <div class="container basis-demo">
+                <p class="item a">A</p>
+                <p class="item b">Bananas are rich in potassium</p>
+                <p class="item c">Cantaloupe</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf6f0;
+    color: #111;
+}
+
+header {
+    padding: 2rem 1.25rem 1rem;
+    border-bottom: 3px solid #2b2a28;
+}
+
+section {
+    padding: 1.25rem;
+}
+
+h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Visual styling only. The dashed line shows the edge of the flex container. */
+.container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 2px dashed #8a817c;
+}
+
+/* Each item gets its own colour so we can track it when the order changes. */
+.item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid;
+}
+
+.a {
+    background-color: lightsalmon;
+    border-color: tomato;
+}
+
+.b {
+    background-color: lemonchiffon;
+    border-color: gold;
+}
+
+.c {
+    background-color: khaki;
+    border-color: darkkhaki;
+}
+
+
+/* STEP 1: A simple flex container */
+
+
+
+/* STEP 2: order */
+
+
+
+/* STEP 3: flex-grow */
+
+
+
+/* STEP 4: flex-shrink */
+
+
+
+/* STEP 5: flex-basis */
