@@ -62,18 +62,70 @@ h2 {
 
 /* STEP 1: A simple flex container */
 
+/* display: flex is set on a container. By default, the children are placed in a row and are only as wide as their content. the left over space sits empty on the right side of container. */
+/* To adjust how the items fit inside the container, the following properties will go on the children not the container. */
+
 
 
 /* STEP 2: order */
+
+/* every flex items starts with order: 0 by default. That means that items are placed in the html order. */
+/* we can change the order, and giving an item a negative number it will move to the front of the row. */
+
+.order-demo .b {
+    order: 2;
+}
+
+.order-demo .c {
+    order: -1;
+}
+
+/* this only change the visual order and html order stays the same, so keep the html in a logical reading order for accessibility. */
 
 
 
 /* STEP 3: flex-grow */
 
+/* decides how the leftover space in the container is shared. the default is zero, which is no growth. A positive number will allow an item to go. */
+
+.grow-demo .a {
+    flex-grow: 1;
+}
+
+.grow-demo item {
+    flex-grow: 1;
+}
+
+.grow-demo .b {
+    flex-grow: 2;
+}
+
+/* if every item is set to grow at the same number, the leftover space is shared equally and added to the content width. */
+
 
 
 /* STEP 4: flex-shrink */
 
+.shrink-demo .item {
+    width: 25rem;
+}
+
+.shrink-demo .c {
+    flex-shrink: 6;
+}
+
+.shrink-demo item {
+    flex-shrink: 0;
+}
+/* 0 will not allow items to shrink. */
+
 
 
 /* STEP 5: flex-basis */
+
+/* is the width of an item before any growing or shrinking happens. the default is auto, which is content width. */
+
+.basis-demo .item {
+    flex-basis: 25rem;
+    flex-grow: 1;
+}
